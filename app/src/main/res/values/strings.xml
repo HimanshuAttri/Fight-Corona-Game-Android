@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fight Corona Virus</string>
+    <string name="game_over">Game Over</string>
+    <string name="your_score">Your Score:</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="play_again">Play Again</string>
+</resources>

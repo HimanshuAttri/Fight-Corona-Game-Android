@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOver"
+    android:background="#009688">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameover"
+        android:text="@string/game_over"
+        android:layout_marginTop="80dp"
+        android:textSize="70sp"
+        android:gravity="center"
+        android:textColor="#FDFDFD">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:gravity="center_horizontal"
+        android:textColor="#FBFBFB"
+        android:layout_below="@+id/gameover"
+        android:textSize="40sp"
+        android:text="@string/your_score"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_margin="5dp"
+        android:layout_below="@id/score"
+        android:id="@+id/ll2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name111"
+            android:textColor="#FBFBFB"
+            android:textSize="22sp"
+            android:text="Name: "
+            android:textStyle="italic"
+            android:layout_weight="80"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+            android:id="@+id/name"
+            android:textColorHint="#FFFCFC"
+            android:layout_below="@id/score"
+            android:layout_weight="20"
+
+            />
+    </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:layout_below="@id/ll2"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/replay"
+        android:text="Play Again"
+        android:padding="10dp"
+        android:background="#053530"
+        android:textStyle="bold"
+        android:textColor="#F8F5F5"
+        android:layout_margin="5dp"
+        android:layout_weight="50"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit"
+        android:text="Exit"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="#053530"
+        android:textStyle="bold"
+        android:textColor="#F8F5F5"
+
+        android:layout_weight="50"/>
+
+
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dbtext"
+        android:layout_below="@+id/ll2">
+
+    </TextView>
+
+
+
+</RelativeLayout>
